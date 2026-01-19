@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Email/Password Autofill Blocker",
+  "version": "1.0",
+  "description": "Blocks browser autofill on username/email/password fields only, letting your password manager take over",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "email-autofill-blocker@example.com"
+    },
+    "gecko_android": {
+      "id": "email-autofill-blocker@example.com"
+    }
+  }
+}
