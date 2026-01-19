@@ -9,9 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/werewolfbiologics/brave-email-autofill-blocker/issues">Report Bug</a>
+  <a href="https://github.com/lyc-aon/brave-email-autofill-blocker/issues">Report Bug</a>
   ·
-  <a href="https://github.com/werewolfbiologics/brave-email-autofill-blocker/issues">Request Feature</a>
+  <a href="https://github.com/lyc-aon/brave-email-autofill-blocker/issues">Request Feature</a>
+  ·
+  <a href="mailto:m@lycan.dev">Contact</a>
 </p>
 
 ---
@@ -20,7 +22,14 @@
 
 Brave bundles email autofill with address autofill in a single toggle. If you use a third-party password manager like **Proton Pass**, **Bitwarden**, or **1Password**, Brave's built-in autofill competes with it and causes conflicts.
 
-**This has been an [open issue since 2021](https://github.com/brave/brave-browser/issues/19065).** We fixed it in ~50 lines of code.
+**This has been an [open issue since 2021](https://github.com/brave/brave-browser/issues/19065).** We fixed it.
+
+## Features
+
+- **Customizable toggles** - choose what to block (email, username, password, phone)
+- **Per-site controls** - disable on specific sites with one click
+- **Status indicator** - see if blocking is active on the current page
+- **Settings sync** - your preferences sync across devices
 
 ## Installation
 
@@ -40,30 +49,25 @@ Brave bundles email autofill with address autofill in a single toggle. If you us
 
 ## What It Does
 
-**Blocks browser autofill on:**
-- Email fields (`type="email"`, `name="email"`, etc.)
-- Username fields (`name="user"`, `name="login"`, etc.)
-- Password fields (`type="password"`)
+**Blocks browser autofill on (configurable):**
+- Email fields
+- Username fields
+- Password fields
+- Phone fields (optional)
 
 **Leaves alone:**
 - Address fields
-- Phone number fields
 - Credit card fields
 
 ## How It Works
 
 The extension sets `autocomplete="off"` and related attributes on login-related input fields, preventing the browser's built-in autofill from activating. Your password manager extension can then fill these fields without interference.
 
-## Technical Details
+## Privacy
 
-- **Zero permissions required** - no access to your data
-- **Lightweight** - single content script, no background processes
-- **Fast** - runs at `document_start` and uses MutationObserver for dynamic content
-- **Universal** - works on all websites
-
-## Contributing
-
-Found a site where it doesn't work? Open an issue with the URL and we'll fix it.
+- Only uses `storage` permission for saving your settings
+- Zero data collection
+- Fully open source
 
 ## License
 
@@ -72,5 +76,5 @@ MIT - Do whatever you want with it.
 ---
 
 <p align="center">
-  Built with frustration by <a href="https://github.com/werewolfbiologics">Lycaon Solutions</a>
+  Built with frustration by <a href="https://lycaon.solutions">Lycaon Solutions</a>
 </p>

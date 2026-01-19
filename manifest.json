@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "description": "Blocks browser autofill on login fields only. Let your password manager work in peace.",
   "author": "Lycaon Solutions",
-  "homepage_url": "https://github.com/lyc-aon/brave-email-autofill-blocker",
+  "homepage_url": "https://lycaon.solutions",
   "permissions": ["storage"],
   "icons": {
     "16": "icons/icon128.png",
