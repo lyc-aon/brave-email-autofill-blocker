@@ -1,9 +1,16 @@
 {
   "manifest_version": 3,
   "name": "Email/Password Autofill Blocker",
-  "version": "1.0",
-  "description": "Blocks browser autofill on username/email/password fields only, letting your password manager take over",
+  "version": "1.0.0",
+  "description": "Blocks browser autofill on username/email/password fields only, letting your password manager take over. A 5-minute fix for a 5-year-old Brave issue.",
+  "author": "Lycaon Solutions",
+  "homepage_url": "https://github.com/werewolfbiologics/brave-email-autofill-blocker",
   "permissions": [],
+  "icons": {
+    "16": "icons/icon128.png",
+    "48": "icons/icon128.png",
+    "128": "icons/icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -13,10 +20,10 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "email-autofill-blocker@example.com"
+      "id": "email-autofill-blocker@lycaonsolutions.com"
     },
     "gecko_android": {
-      "id": "email-autofill-blocker@example.com"
+      "id": "email-autofill-blocker@lycaonsolutions.com"
     }
   }
 }
