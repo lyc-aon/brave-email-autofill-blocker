@@ -20,7 +20,7 @@
 
 Brave bundles email autofill with address autofill in a single toggle. If you use a third-party password manager like **Proton Pass**, **Bitwarden**, or **1Password**, Brave's built-in autofill competes with it and causes conflicts.
 
-**This has been an [open issue since 2021](https://github.com/AXeL-dev/brave-browser/issues/XXX).** We fixed it in ~50 lines of code.
+**This has been an [open issue since 2021](https://github.com/brave/brave-browser/issues/19065).** We fixed it in ~50 lines of code.
 
 ## Installation
 
